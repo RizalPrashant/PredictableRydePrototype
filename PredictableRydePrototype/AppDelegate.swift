@@ -141,5 +141,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 //
 //}
 extension AppDelegate: MessagingDelegate{
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        print("Firebase registration token: \(fcmToken)")
+        
+        let dataDict:[String: String] = ["token": fcmToken]
+        NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
+        // TODO: If necessary send token to application server.
+        // Note: This callback is fired at each app startup and whenever a new token is generated.
+    }
     
+    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+        print("Message Data", remoteMessage.appData)
+    }
 }
+
+
+//TO:DO
+/*
+ --UNNotificationcenterDelegateextension for remote
+ push notification by first removing local notification
+ --Generate APN key (Apple Push notification)
+ --Developer account
+ --Enable Push notification permission
+ */
