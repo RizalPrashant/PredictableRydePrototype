@@ -14,9 +14,11 @@
 		8FC25C5C221143A900340DB5 /* PredictableRydePrototype.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FC25C5A221143A900340DB5 /* PredictableRydePrototype.xcdatamodeld */; };
 		8FC25C5E221143B600340DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC25C5D221143B600340DB5 /* Assets.xcassets */; };
 		8FC25C61221143B600340DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC25C5F221143B600340DB5 /* LaunchScreen.storyboard */; };
+		D296AC4128016AAB267A7356 /* Pods_PredictableRydePrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95382B5F1D2801E0BD23C1C /* Pods_PredictableRydePrototype.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ACDB299958C82E7E53482CB /* Pods-PredictableRydePrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PredictableRydePrototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-PredictableRydePrototype/Pods-PredictableRydePrototype.release.xcconfig"; sourceTree = "<group>"; };
 		8F3287392223CA7E00AD2611 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8FC25C50221143A900340DB5 /* PredictableRydePrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PredictableRydePrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC25C53221143A900340DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		8FC25C5D221143B600340DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FC25C60221143B600340DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FC25C62221143B600340DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFAD699F8FDD636F61A23152 /* Pods-PredictableRydePrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PredictableRydePrototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PredictableRydePrototype/Pods-PredictableRydePrototype.debug.xcconfig"; sourceTree = "<group>"; };
+		C95382B5F1D2801E0BD23C1C /* Pods_PredictableRydePrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PredictableRydePrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D296AC4128016AAB267A7356 /* Pods_PredictableRydePrototype.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77563920612A9DAE2AD42DA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C95382B5F1D2801E0BD23C1C /* Pods_PredictableRydePrototype.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FC25C47221143A800340DB5 = {
 			isa = PBXGroup;
 			children = (
 				8FC25C52221143A900340DB5 /* PredictableRydePrototype */,
 				8FC25C51221143A900340DB5 /* Products */,
+				F35F2427D7DEB59B75479DCC /* Pods */,
+				77563920612A9DAE2AD42DA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,15 @@
 			path = PredictableRydePrototype;
 			sourceTree = "<group>";
 		};
+		F35F2427D7DEB59B75479DCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFAD699F8FDD636F61A23152 /* Pods-PredictableRydePrototype.debug.xcconfig */,
+				1ACDB299958C82E7E53482CB /* Pods-PredictableRydePrototype.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FC25C65221143B600340DB5 /* Build configuration list for PBXNativeTarget "PredictableRydePrototype" */;
 			buildPhases = (
+				1E42DFE8E1C1A671E823CC39 /* [CP] Check Pods Manifest.lock */,
 				8FC25C4C221143A800340DB5 /* Sources */,
 				8FC25C4D221143A800340DB5 /* Frameworks */,
 				8FC25C4E221143A800340DB5 /* Resources */,
+				C4B23377C1501EB05F78EB87 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,6 +128,11 @@
 				TargetAttributes = {
 					8FC25C4F221143A800340DB5 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,6 +167,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E42DFE8E1C1A671E823CC39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PredictableRydePrototype-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4B23377C1501EB05F78EB87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PredictableRydePrototype/Pods-PredictableRydePrototype-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PredictableRydePrototype/Pods-PredictableRydePrototype-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FC25C4C221143A800340DB5 /* Sources */ = {
@@ -288,6 +370,7 @@
 		};
 		8FC25C66221143B600340DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFAD699F8FDD636F61A23152 /* Pods-PredictableRydePrototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +390,7 @@
 		};
 		8FC25C67221143B600340DB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ACDB299958C82E7E53482CB /* Pods-PredictableRydePrototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
