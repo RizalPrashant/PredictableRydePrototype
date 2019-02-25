@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import UserNotifications
 
 class customPin: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
@@ -27,6 +28,20 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //Basic notification content
+        
+        let content = UNMutableNotificationContent()
+        content.title="Local Notification"
+        content.body = "It works"
+        content.sound = UNNotificationSound.default
+        //trigger for notification
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        //request for notification
+        let request = UNNotificationRequest(identifier: "testIdentifier", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
         
         let sourceLocation = CLLocationCoordinate2D(latitude: 43.615021, longitude: -116.202316)
         let destinationLocation = CLLocationCoordinate2D(latitude: 43.585320, longitude: -116.573578)
